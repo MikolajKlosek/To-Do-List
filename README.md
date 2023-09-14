@@ -6,5 +6,6 @@
 ## Description
 I would like to introduce You to my small project regarding creating a simple list of tasks to do. On this site you can add new tasks to your list. Next you can mark which are done, and then remove them permanently from the list.
 
-Here is a quick-pic of how it looks
+Here is a quick-pic of how it looks:
+
 ![Pic]((https://github.com/MikolajKlosek/To-Do-List/assets/143798024/cbd40c1a-8d9f-4db6-993c-086a38188273)

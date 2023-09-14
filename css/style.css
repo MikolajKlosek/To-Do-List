@@ -10,21 +10,26 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #eee;
 }
+button {
+    cursor: pointer;
+}
 
 .container {
     display: flex;
-    width: 50%;
+    max-width: 900px;
     margin: 0 auto;
     flex-direction: column;
 }
 
 .mainHeader {
-    padding: 10px;
+    padding: 20px;
+    margin: 0;
 }
 
 .section {
     background-color: white;
-    margin: 10px;
+    margin: 0;
+    padding: 20px;
     box-shadow: 0px 0px 8px 1px rgb(226, 226, 226);
 }
 
@@ -39,19 +44,20 @@ body {
 }
 
 .form {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
 }
 
 @media (max-width: 767px) {
     .form {
-        flex-basis: 100%;
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 }
 
 .form__input {
-    padding: 5px;
-    border: solid #ddd;
+    padding: 10px;
+    border: 1px solid #ddd;
 }
 
 .form__button {
@@ -65,12 +71,14 @@ body {
     background-color: hsl(180, 100%, 35%);
 }
 
+.form__button:active {
+    background-color: hsl(180, 100%, 40%);
+}
+
 .tasks {
     list-style: none;
     background-color: rgb(255, 255, 255);
     padding: 5px 20px;
-    margin: 1px 0px 1px 0px ;
-    min-height: 70px;
 }
 
 .list__items {
@@ -100,8 +108,7 @@ body {
     color:white;
     border: none;
     padding: 20px;
-    margin: 10px;
-    border-radius: 2px solid;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;

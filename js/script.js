@@ -47,12 +47,12 @@
             <button class="js-done list__button">
                 ${task.done ? "✔" : ""}
             </button>
-               <span class="list__item${task.done ? " list__item--done" : ""}">
-                  ${task.content}
-               </span> 
+            <span class="list__item${task.done ? " list__item--done" : ""}">
+                ${task.content}
+            </span> 
             <button class="js-remove list__button list__button--remove">
                🗑
-             </button>
+            </button>
          </li>
          `;
       }
@@ -84,7 +84,7 @@
       const form = document.querySelector(".js-form");
 
       form.addEventListener("submit", onFormSubmit);
-
+ 
    };
 
    init();

@@ -12,8 +12,10 @@ body {
 }
 
 .container {
+    display: flex;
     width: 50%;
     margin: 0 auto;
+    flex-direction: column;
 }
 
 .mainHeader {
@@ -22,7 +24,6 @@ body {
 
 .section {
     background-color: white;
-    padding: 5px;
     margin: 10px;
     box-shadow: 0px 0px 8px 1px rgb(226, 226, 226);
 }
@@ -30,7 +31,7 @@ body {
 .section__header{
     font-size: 15px;
     padding: 10px;
-    border-bottom: solid 2px #eee
+    border-bottom: solid 2px #eee;
 }
 
 .section__field {
@@ -38,13 +39,13 @@ body {
 }
 
 .form {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
 }
 
 @media (max-width: 767px) {
     .form {
-        grid-template-columns: 1fr;
+        flex-basis: 100%;
+        flex-direction: column;
     }
 }
 
@@ -57,6 +58,7 @@ body {
     border: none;
     background-color: teal;
     color: white;
+    padding: 10px;
 }
 
 .form__button:hover {
@@ -65,12 +67,62 @@ body {
 
 .tasks {
     list-style: none;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    margin: 1px 0px 1px 0px ;
+    min-height: 70px;
 }
 
-.tasks__item--checked {
-    text-decoration: line-through;
+.list__items {
+    word-break: break-word;
+    list-style: none;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 
 .list__item--done {
+    word-break: break-word;
     text-decoration: line-through;
+}
+
+.list__button {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    color:white;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list__button:hover {
+    background-color: rgb(0, 157, 0);
+}
+
+.list__button:active {
+    background-color: rgb(0, 186, 0);
+}
+
+.list__button--remove {
+    background-color: rgb(212, 19, 19);
+}
+
+.list__button--remove:hover {
+    background-color: rgb(230, 11, 11);
+}
+
+.list__button--remove:active {
+    background-color: rgb(255, 0, 0);
 }

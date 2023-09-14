@@ -8,4 +8,69 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.mainHeader {
+    padding: 10px;
+}
+
+.section {
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0px 0px 8px 1px rgb(226, 226, 226);
+}
+
+.section__header{
+    font-size: 15px;
+    padding: 10px;
+    border-bottom: solid 2px #eee
+}
+
+.section__field {
+    padding: 10px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form__input {
+    padding: 5px;
+    border: solid #ddd;
+}
+
+.form__button {
+    border: none;
+    background-color: teal;
+    color: white;
+}
+
+.form__button:hover {
+    background-color: hsl(180, 100%, 35%);
+}
+
+.tasks {
+    list-style: none;
+}
+
+.tasks__item--checked {
+    text-decoration: line-through;
+}
+
+.list__item--done {
+    text-decoration: line-through;
 }

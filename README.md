@@ -8,4 +8,4 @@ I would like to introduce You to my small project regarding creating a simple li
 
 Here is a quick-pic of how it looks:
 
-![Pic]
+![Pic](https://github.com/MikolajKlosek/To-Do-List/blob/main/images/todolist.png)

@@ -11,8 +11,8 @@ Here is a quick-pic of how it looks:
 ![Pic](https://github.com/MikolajKlosek/To-Do-List/blob/main/images/todolist.png)
 
 ## Technologies
--ES6
--BEM
--HTML5
--CSS3
--JS
+- ES6
+- BEM
+- HTML5
+- CSS3
+- JavaScript

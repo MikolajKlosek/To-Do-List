@@ -113,6 +113,7 @@ button {
     border: none;
     padding: 0;
     transition:  background 0.5s;
+    background-color: green;
 }
 
 .tasks__button:hover {

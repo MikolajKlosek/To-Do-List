@@ -34,13 +34,19 @@ button {
 }
 
 .section__header{
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px;
-    border-bottom: solid 2px #eee;
+    display: flex;
 }
 
 .section__field {
     padding: 10px;
+}
+
+.section__bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: solid 2px #eee;
 }
 
 .form {
@@ -135,4 +141,3 @@ button {
 .tasks__button--remove:active {
     background-color: rgb(255, 0, 0);
 }
-
